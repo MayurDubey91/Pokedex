@@ -1,0 +1,11 @@
+@import "variables"; //import variables
+.filterform {
+  .fieldcontainer {
+    .input {
+      border: 0 none;
+      &[data-filtertype="Search"] {
+        min-width: 420px;
+      }
+    }
+  }
+}

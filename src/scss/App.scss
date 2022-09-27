@@ -1,0 +1,72 @@
+@import "variables";
+.App {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  height: 100%;
+  //images should always adhere to aspect ratio
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  // common css rules for the app - any common rule should come here
+  .-hidden {
+    display: none;
+  }
+
+  .-padding-half {
+    padding: 0.5rem;
+  }
+
+  .-padding-one {
+    padding: 1rem;
+  }
+
+  //forms, fields, buttons related rules
+  .-label {
+    margin: 0.3rem;
+    &.-left-aligned {
+      text-align: left;
+    }
+  }
+  .-field {
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    color: $primary-color;
+    padding: 0.5rem;
+    height: 25px;
+    margin-right: 0.5rem;
+  }
+
+  // flex css rules for the whole app - any flex related rules should come here
+  .-flex {
+    display: flex;
+    flex-wrap: wrap;
+    &.-middle-aligned {
+      justify-content: center;
+      align-items: center;
+    }
+    &.-right-aligned {
+      align-items: flex-end;
+    }
+    &.-bottom-aligned {
+      align-items: flex-end;
+    }
+    &.-nowrap {
+      flex-wrap: nowrap;
+    }
+    &.-top-to-bottom {
+      flex-direction: column;
+    }
+    &.-left-to-right {
+      flex-direction: row;
+    }
+    > .-flex-column,
+    .-flex-row {
+      flex: 0 0 auto;
+      &.-resize {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

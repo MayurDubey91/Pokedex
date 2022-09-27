@@ -1,0 +1,11 @@
+@import "variables"; //import variables
+.fieldcontainer {
+  .input {
+    background-color: $secondary-color;
+    //[TO Do] : below rules should go under filter.module.css
+    border: 0 none;
+    &[data-filtertype="Search"] {
+      min-width: 420px;
+    }
+  }
+}
